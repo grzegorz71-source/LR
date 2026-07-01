@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>LR Health & Beauty – Oficjalna Strona</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="LR Health & Beauty – suplementy diety, kosmetyki, biznes rekomendacji. Poznaj świat LR.">
+    <meta name="description"
+        content="LR Health & Beauty – suplementy diety, kosmetyki, biznes rekomendacji. Poznaj świat LR.">
     <style>
         :root {
             --primary: #0b8c6b;
@@ -45,7 +47,7 @@
             top: 0;
             z-index: 100;
             background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
 
         .container {
@@ -210,7 +212,7 @@
             padding: 1.5rem;
             background: linear-gradient(135deg, #e9f7f3, #fff);
             border-radius: 1.25rem;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .hero-image-main {
@@ -234,7 +236,7 @@
             border-radius: 999px;
             background: #fff;
             font-size: 0.8rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         /* Sections */
@@ -271,7 +273,7 @@
             background: #fff;
             border-radius: 1rem;
             padding: 1.4rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
             display: flex;
             flex-direction: column;
             gap: 0.6rem;
@@ -353,7 +355,7 @@
             background: #fff;
             border-radius: 1rem;
             padding: 1.4rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
             font-size: 0.9rem;
             color: var(--text-light);
         }
@@ -374,7 +376,7 @@
             background: #fff;
             border-radius: 1rem;
             padding: 1.3rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
             font-size: 0.9rem;
             color: var(--text-light);
         }
@@ -402,7 +404,7 @@
             background: #fff;
             border-radius: 1rem;
             padding: 1.5rem;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
         }
 
         .form-row {
@@ -437,7 +439,7 @@
         textarea:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 2px rgba(11,140,107,0.12);
+            box-shadow: 0 0 0 2px rgba(11, 140, 107, 0.12);
         }
 
         .form-note {
@@ -491,6 +493,7 @@
         /* Responsywność */
 
         @media (max-width: 900px) {
+
             .hero-grid,
             .business-grid,
             .contact-grid {
@@ -536,308 +539,314 @@
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <nav class="nav">
-            <div class="logo">
-                <span class="icon">LR</span>
-                <span>Health &amp; Beauty</span>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <span class="icon">LR</span>
+                    <span>Health &amp; Beauty</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#produkty">Produkty</a>
+                    <!-- <a href="#biznes">Biznes LR</a> -->
+                    <a href="#opinie">Opinie</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+                <a href="#kontakt" class="nav-cta">Dołącz do LR</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <h1 class="hero-title">Zdrowie, uroda i biznes rekomendacji z LR Health &amp; Beauty</h1>
+                    <p class="hero-subtitle">
+                        Odkryj świat wysokiej jakości suplementów diety, innowacyjnych kosmetyków oraz
+                        sprawdzony model biznesowy oparty na rekomendacji. Buduj swój styl życia z LR.
+                    </p>
+
+                    <div class="hero-badges">
+                        <span class="badge">Aloes &amp; kolagen</span>
+                        <span class="badge">Niemiecka jakość</span>
+                        <span class="badge">Model biznesu rekomendacji</span>
+                        <span class="badge">Wsparcie mentora</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="btn-primary"
+                            onclick="document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">
+                            Porozmawiaj o współpracy
+                        </button>
+                        <button class="btn-secondary"
+                            onclick="document.getElementById('produkty').scrollIntoView({behavior:'smooth'})">
+                            Zobacz flagowe produkty
+                        </button>
+                    </div>
+
+                    <p class="hero-note">
+                        LR Health &amp; Beauty to międzynarodowa marka działająca w oparciu o rekomendacje.
+                        Ta strona ma charakter informacyjny i nie jest oficjalną stroną firmy.
+                    </p>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-image-main">
+                        <div>
+                            <p>Wyobraź sobie półkę pełną produktów LR:</p>
+                            <p><strong>aloes, kolagen, wellness, pielęgnacja twarzy</strong> – wszystko w jednym
+                                miejscu.</p>
+                        </div>
+                    </div>
+                    <div class="hero-image-tag">
+                        Naturalne składniki • Nowoczesne formuły • Wsparcie społeczności
+                    </div>
+                </div>
             </div>
-            <div class="nav-links">
+        </section>
+
+        <!-- PRODUKTY -->
+        <section id="produkty">
+            <div class="container">
+                <h2 class="section-title">Flagowe linie produktów LR Health &amp; Beauty</h2>
+                <p class="section-subtitle">
+                    LR łączy naukę, naturę i doświadczenie, tworząc produkty, które wspierają codzienne
+                    funkcjonowanie organizmu, wygląd skóry oraz ogólne samopoczucie.
+                </p>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-tag">Suplementy diety</div>
+                        <h3 class="card-title">Aloes, kolagen i wsparcie odporności</h3>
+                        <p class="card-text">
+                            LR słynie z produktów opartych na wysokiej jakości aloesie oraz nowoczesnych
+                            formułach kolagenowych. To codzienne wsparcie dla Twojego organizmu.
+                        </p>
+                        <ul class="card-list">
+                            <li>Napojowe produkty aloesowe</li>
+                            <li>Kolagenowe wsparcie stawów i skóry</li>
+                            <li>Witaminy i minerały na co dzień</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-tag">Pielęgnacja twarzy</div>
+                        <h3 class="card-title">Kosmetyki dopasowane do potrzeb skóry</h3>
+                        <p class="card-text">
+                            Innowacyjne linie pielęgnacyjne, które odpowiadają na różne potrzeby skóry:
+                            nawilżenie, regeneracja, anti-aging, ochrona przed czynnikami zewnętrznymi.
+                        </p>
+                        <ul class="card-list">
+                            <li>Kremy na dzień i na noc</li>
+                            <li>Serum i koncentraty</li>
+                            <li>Delikatne oczyszczanie i tonizacja</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-tag">Lifestyle &amp; zapachy</div>
+                        <h3 class="card-title">Perfumy, pielęgnacja ciała i styl życia</h3>
+                        <p class="card-text">
+                            LR oferuje również szeroką gamę zapachów, produktów do pielęgnacji ciała
+                            oraz rozwiązań wspierających aktywny, świadomy styl życia.
+                        </p>
+                        <ul class="card-list">
+                            <li>Perfumy damskie i męskie</li>
+                            <li>Pielęgnacja włosów i ciała</li>
+                            <li>Produkty wspierające aktywność fizyczną</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BIZNES -->
+        <section id="biznes">
+            <div class="container">
+                <h2 class="section-title">Biznes rekomendacji z LR Health &amp; Beauty</h2>
+                <p class="section-subtitle">
+                    LR działa w oparciu o prosty model: używasz produkty, polecasz je dalej, budujesz
+                    własną sieć klientów i partnerów. To możliwość dodatkowego dochodu lub zmiany stylu życia.
+                </p>
+
+                <div class="business-grid">
+                    <div>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div>
+                                    <div class="step-content-title">Poznaj produkty i filozofię LR</div>
+                                    <p class="step-content-text">
+                                        Zaczynasz od poznania produktów, ich działania oraz wartości, które stoją za
+                                        marką.
+                                        To fundament autentycznej rekomendacji.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div>
+                                    <div class="step-content-title">Podziel się doświadczeniem</div>
+                                    <p class="step-content-text">
+                                        Dzielisz się własnymi efektami i historią z innymi. Nie sprzedajesz „na siłę” –
+                                        opowiadasz o tym, co realnie działa u Ciebie.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div>
+                                    <div class="step-content-title">Buduj sieć klientów i partnerów</div>
+                                    <p class="step-content-text">
+                                        Z czasem tworzysz społeczność osób, które korzystają z produktów LR oraz
+                                        rozwijają swój biznes rekomendacji razem z Tobą.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p>
+                            <strong>Co możesz zyskać?</strong><br><br>
+                            • Dodatkowe źródło dochodu lub pełnoprawny biznes<br>
+                            • Elastyczną pracę z dowolnego miejsca<br>
+                            • Wsparcie mentora i gotowy system szkoleń<br>
+                            • Społeczność ludzi nastawionych na rozwój osobisty i zdrowy styl życia
+                        </p>
+                        <p style="margin-top: 0.8rem;">
+                            Jeśli chcesz porozmawiać o możliwościach współpracy, zostaw swoje dane w formularzu
+                            kontaktowym poniżej – odezwę się do Ciebie i opowiem, jak wygląda współpraca z LR
+                            w praktyce.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPINIE -->
+        <section id="opinie">
+            <div class="container">
+                <h2 class="section-title">Historie osób współpracujących z LR</h2>
+                <p class="section-subtitle">
+                    Biznes rekomendacji to przede wszystkim ludzie. Każda historia jest inna, ale łączy je jedno:
+                    chęć zadbania o zdrowie, wygląd i niezależność finansową.
+                </p>
+
+                <div class="testimonials">
+                    <article class="testimonial">
+                        <p>
+                            „Zaczynałam od kilku produktów na odporność. Z czasem pokochałam aloes i kolagen,
+                            a dziś LR jest częścią mojego stylu życia i źródłem dodatkowego dochodu.”
+                        </p>
+                        <div class="testimonial-name">Anna</div>
+                        <div class="testimonial-role">Partner LR, mama dwójki dzieci</div>
+                    </article>
+
+                    <article class="testimonial">
+                        <p>
+                            „Najbardziej cenię to, że nie muszę rezygnować z pracy etatowej. LR traktuję jako
+                            projekt rozwojowy – uczę się sprzedaży, komunikacji i budowania relacji.”
+                        </p>
+                        <div class="testimonial-name">Marek</div>
+                        <div class="testimonial-role">Partner LR, praca w IT</div>
+                    </article>
+
+                    <article class="testimonial">
+                        <p>
+                            „Do LR przyciągnęła mnie jakość produktów. Dopiero później odkryłam, że mogę
+                            zbudować na tym realny biznes. Dziś współpracuję z osobami z całej Polski.”
+                        </p>
+                        <div class="testimonial-name">Katarzyna</div>
+                        <div class="testimonial-role">Partner LR, pasjonatka zdrowego stylu życia</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAKT -->
+        <section id="kontakt">
+            <div class="container">
+                <h2 class="section-title">Porozmawiaj o współpracy z LR Health &amp; Beauty</h2>
+                <p class="section-subtitle">
+                    Zostaw swoje dane kontaktowe, a odezwę się do Ciebie, aby odpowiedzieć na pytania
+                    dotyczące produktów LR oraz możliwości współpracy w modelu biznesu rekomendacji.
+                </p>
+
+                <div class="contact-grid">
+                    <form name="kontakt" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="kontakt">
+
+                        <div class="form-row">
+                            <label for="name">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Adres e-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Numer telefonu (opcjonalnie)</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Wyślij zgłoszenie</button>
+                    </form>
+
+
+                    <div class="contact-info">
+                        <p><strong>Bezpośredni kontakt:</strong></p>
+                        <p>
+                            <a href="mailto:agip240571@wp.pl">agip240571@wp.pl</a>
+                        </p>
+                        <p>
+                            <a href="tel: 883 616 515">tel: 883616515</a>
+                        </p>
+                        <p style="margin-top: 0.8rem;">
+                            Możesz też napisać do mnie przez media społecznościowe – chętnie opowiem,
+                            jak wygląda współpraca z LR w praktyce, jakie są możliwości rozwoju oraz
+                            jak dopasować model działania do Twojej sytuacji życiowej.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                &copy; <span id="year"></span> Strona informacyjna o LR Health &amp; Beauty.
+                Nieoficjalna, prywatna witryna.
+            </div>
+            <div class="footer-links">
                 <a href="#produkty">Produkty</a>
-                <!-- <a href="#biznes">Biznes LR</a> -->
+                <!-- <a href="#biznes">Biznes</a> -->
                 <a href="#opinie">Opinie</a>
                 <a href="#kontakt">Kontakt</a>
             </div>
-            <a href="#kontakt" class="nav-cta">Dołącz do LR</a>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container hero-grid">
-            <div>
-                <h1 class="hero-title">Zdrowie, uroda i biznes rekomendacji z LR Health &amp; Beauty</h1>
-                <p class="hero-subtitle">
-                    Odkryj świat wysokiej jakości suplementów diety, innowacyjnych kosmetyków oraz
-                    sprawdzony model biznesowy oparty na rekomendacji. Buduj swój styl życia z LR.
-                </p>
-
-                <div class="hero-badges">
-                    <span class="badge">Aloes &amp; kolagen</span>
-                    <span class="badge">Niemiecka jakość</span>
-                    <span class="badge">Model biznesu rekomendacji</span>
-                    <span class="badge">Wsparcie mentora</span>
-                </div>
-
-                <div class="hero-actions">
-                    <button class="btn-primary" onclick="document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">
-                        Porozmawiaj o współpracy
-                    </button>
-                    <button class="btn-secondary" onclick="document.getElementById('produkty').scrollIntoView({behavior:'smooth'})">
-                        Zobacz flagowe produkty
-                    </button>
-                </div>
-
-                <p class="hero-note">
-                    LR Health &amp; Beauty to międzynarodowa marka działająca w oparciu o rekomendacje.
-                    Ta strona ma charakter informacyjny i nie jest oficjalną stroną firmy.
-                </p>
-            </div>
-
-            <div class="hero-image">
-                <div class="hero-image-main">
-                    <div>
-                        <p>Wyobraź sobie półkę pełną produktów LR:</p>
-                        <p><strong>aloes, kolagen, wellness, pielęgnacja twarzy</strong> – wszystko w jednym miejscu.</p>
-                    </div>
-                </div>
-                <div class="hero-image-tag">
-                    Naturalne składniki • Nowoczesne formuły • Wsparcie społeczności
-                </div>
-            </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- PRODUKTY -->
-    <section id="produkty">
-        <div class="container">
-            <h2 class="section-title">Flagowe linie produktów LR Health &amp; Beauty</h2>
-            <p class="section-subtitle">
-                LR łączy naukę, naturę i doświadczenie, tworząc produkty, które wspierają codzienne
-                funkcjonowanie organizmu, wygląd skóry oraz ogólne samopoczucie.
-            </p>
-
-            <div class="cards">
-                <article class="card">
-                    <div class="card-tag">Suplementy diety</div>
-                    <h3 class="card-title">Aloes, kolagen i wsparcie odporności</h3>
-                    <p class="card-text">
-                        LR słynie z produktów opartych na wysokiej jakości aloesie oraz nowoczesnych
-                        formułach kolagenowych. To codzienne wsparcie dla Twojego organizmu.
-                    </p>
-                    <ul class="card-list">
-                        <li>Napojowe produkty aloesowe</li>
-                        <li>Kolagenowe wsparcie stawów i skóry</li>
-                        <li>Witaminy i minerały na co dzień</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <div class="card-tag">Pielęgnacja twarzy</div>
-                    <h3 class="card-title">Kosmetyki dopasowane do potrzeb skóry</h3>
-                    <p class="card-text">
-                        Innowacyjne linie pielęgnacyjne, które odpowiadają na różne potrzeby skóry:
-                        nawilżenie, regeneracja, anti-aging, ochrona przed czynnikami zewnętrznymi.
-                    </p>
-                    <ul class="card-list">
-                        <li>Kremy na dzień i na noc</li>
-                        <li>Serum i koncentraty</li>
-                        <li>Delikatne oczyszczanie i tonizacja</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <div class="card-tag">Lifestyle &amp; zapachy</div>
-                    <h3 class="card-title">Perfumy, pielęgnacja ciała i styl życia</h3>
-                    <p class="card-text">
-                        LR oferuje również szeroką gamę zapachów, produktów do pielęgnacji ciała
-                        oraz rozwiązań wspierających aktywny, świadomy styl życia.
-                    </p>
-                    <ul class="card-list">
-                        <li>Perfumy damskie i męskie</li>
-                        <li>Pielęgnacja włosów i ciała</li>
-                        <li>Produkty wspierające aktywność fizyczną</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- BIZNES -->
-    <!-- <section id="biznes">
-        <div class="container">
-            <h2 class="section-title">Biznes rekomendacji z LR Health &amp; Beauty</h2>
-            <p class="section-subtitle">
-                LR działa w oparciu o prosty model: używasz produkty, polecasz je dalej, budujesz
-                własną sieć klientów i partnerów. To możliwość dodatkowego dochodu lub zmiany stylu życia.
-            </p>
-
-            <div class="business-grid">
-                <div>
-                    <div class="steps">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <div>
-                                <div class="step-content-title">Poznaj produkty i filozofię LR</div>
-                                <p class="step-content-text">
-                                    Zaczynasz od poznania produktów, ich działania oraz wartości, które stoją za marką.
-                                    To fundament autentycznej rekomendacji.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <div>
-                                <div class="step-content-title">Podziel się doświadczeniem</div>
-                                <p class="step-content-text">
-                                    Dzielisz się własnymi efektami i historią z innymi. Nie sprzedajesz „na siłę” –
-                                    opowiadasz o tym, co realnie działa u Ciebie.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <div>
-                                <div class="step-content-title">Buduj sieć klientów i partnerów</div>
-                                <p class="step-content-text">
-                                    Z czasem tworzysz społeczność osób, które korzystają z produktów LR oraz
-                                    rozwijają swój biznes rekomendacji razem z Tobą.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="highlight-box">
-                    <p>
-                        <strong>Co możesz zyskać?</strong><br><br>
-                        • Dodatkowe źródło dochodu lub pełnoprawny biznes<br>
-                        • Elastyczną pracę z dowolnego miejsca<br>
-                        • Wsparcie mentora i gotowy system szkoleń<br>
-                        • Społeczność ludzi nastawionych na rozwój osobisty i zdrowy styl życia
-                    </p>
-                    <p style="margin-top: 0.8rem;">
-                        Jeśli chcesz porozmawiać o możliwościach współpracy, zostaw swoje dane w formularzu
-                        kontaktowym poniżej – odezwę się do Ciebie i opowiem, jak wygląda współpraca z LR
-                        w praktyce.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- OPINIE -->
-    <section id="opinie">
-        <div class="container">
-            <h2 class="section-title">Historie osób współpracujących z LR</h2>
-            <p class="section-subtitle">
-                Biznes rekomendacji to przede wszystkim ludzie. Każda historia jest inna, ale łączy je jedno:
-                chęć zadbania o zdrowie, wygląd i niezależność finansową.
-            </p>
-
-            <div class="testimonials">
-                <article class="testimonial">
-                    <p>
-                        „Zaczynałam od kilku produktów na odporność. Z czasem pokochałam aloes i kolagen,
-                        a dziś LR jest częścią mojego stylu życia i źródłem dodatkowego dochodu.”
-                    </p>
-                    <div class="testimonial-name">Anna</div>
-                    <div class="testimonial-role">Partner LR, mama dwójki dzieci</div>
-                </article>
-
-                <article class="testimonial">
-                    <p>
-                        „Najbardziej cenię to, że nie muszę rezygnować z pracy etatowej. LR traktuję jako
-                        projekt rozwojowy – uczę się sprzedaży, komunikacji i budowania relacji.”
-                    </p>
-                    <div class="testimonial-name">Marek</div>
-                    <div class="testimonial-role">Partner LR, praca w IT</div>
-                </article>
-
-                <article class="testimonial">
-                    <p>
-                        „Do LR przyciągnęła mnie jakość produktów. Dopiero później odkryłam, że mogę
-                        zbudować na tym realny biznes. Dziś współpracuję z osobami z całej Polski.”
-                    </p>
-                    <div class="testimonial-name">Katarzyna</div>
-                    <div class="testimonial-role">Partner LR, pasjonatka zdrowego stylu życia</div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- KONTAKT -->
-    <section id="kontakt">
-        <div class="container">
-            <h2 class="section-title">Porozmawiaj o współpracy z LR Health &amp; Beauty</h2>
-            <p class="section-subtitle">
-                Zostaw swoje dane kontaktowe, a odezwę się do Ciebie, aby odpowiedzieć na pytania
-                dotyczące produktów LR oraz możliwości współpracy w modelu biznesu rekomendacji.
-            </p>
-
-            <div class="contact-grid">
-        <form name="kontakt" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="kontakt">
-
-    <div class="form-row">
-        <label for="name">Imię i nazwisko</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="form-row">
-        <label for="email">Adres e-mail</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="form-row">
-        <label for="phone">Numer telefonu (opcjonalnie)</label>
-        <input type="text" id="phone" name="phone">
-    </div>
-
-    <div class="form-row">
-        <label for="message">Wiadomość</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-
-    <button type="submit" class="btn-primary">Wyślij zgłoszenie</button>
-</form>
-
-
-                <div class="contact-info">
-                    <p><strong>Bezpośredni kontakt:</strong></p>
-                     <p>
-    <a href="mailto:agip240571@wp.pl">agip240571@wp.pl</a>
-    </p>
-                    <p>
-    <a href="tel: 883 616 515">tel: 883616515</a>
-    </p>
-                    <p style="margin-top: 0.8rem;">
-                        Możesz też napisać do mnie przez media społecznościowe – chętnie opowiem,
-                        jak wygląda współpraca z LR w praktyce, jakie są możliwości rozwoju oraz
-                        jak dopasować model działania do Twojej sytuacji życiowej.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <div class="container footer-grid">
-        <div>
-            &copy; <span id="year"></span> Strona informacyjna o LR Health &amp; Beauty.
-            Nieoficjalna, prywatna witryna.
-        </div>
-        <div class="footer-links">
-            <a href="#produkty">Produkty</a>
-            <!-- <a href="#biznes">Biznes</a> -->
-            <a href="#opinie">Opinie</a>
-            <a href="#kontakt">Kontakt</a>
-        </div>
-    </div>
-</footer>
-
-<script>
-    // Ustawienie aktualnego roku w stopce
-    document.getElementById('').textContent = new Date().getFullYear();
-</script>
+    <script>
+        // Ustawienie aktualnego roku w stopce
+        document.getElementById('').textContent = new Date().getFullYear();
+    </script>
 
 </body>
+
 </html>
