@@ -783,23 +783,31 @@
                <section id="kontakt">
                   <h2>Kontakt</h2>
                 
-                  <form name="kontakt" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="kontakt">
-                
-                    <label>Imię i nazwisko
-                      <input type="text" name="name" required>
-                    </label>
-                
-                    <label>Email
-                      <input type="email" name="email" required>
-                    </label>
-                
-                    <label>Wiadomość
-                      <textarea name="message" required></textarea>
-                    </label>
-                
-                    <button type="submit">Wyślij</button>
-                  </form>
+                    <form name="kontakt" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="kontakt">
+
+                        <div class="form-row">
+                            <label for="name">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Adres e-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Numer telefonu (opcjonalnie)</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Wyślij zgłoszenie</button>
+                    </form>
                 </section>
 
 
