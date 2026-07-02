@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="LR Health & Beauty – suplementy diety, kosmetyki, biznes rekomendacji. Poznaj świat LR.">
-     <link rel="stylesheet" 
-    href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/script.js" defer></script>
 </head>
 
 <body>
 
     <header>
+        <div class="person">
+        <img class="imgProfil" width="70" src="Image/IMG_20260513_114420[1].png" alt="zdjecie profilowe">
+        <p>Grzegorz Nowicki</p>
+        </div>
         <div class="container">
             <nav class="nav">
                 <div class="logo">
@@ -252,9 +255,9 @@
                     dotyczące produktów LR oraz możliwości współpracy w modelu biznesu rekomendacji.
                 </p>
 
-               <section id="kontakt">
-                  <h2>Kontakt</h2>
-                    <form name="kontakt" method="POST" data-netlify="true">
+                <section id="kontakt">
+                    <h2>Kontakt</h2>
+                    <form class="form" name="kontakt" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="kontakt">
 
                         <div class="form-row">
@@ -283,21 +286,22 @@
 
 
 
-                    <div class="contact-info">
-                        <p><strong>Bezpośredni kontakt:</strong></p>
-                        <p>
-                            <a href="mailto:agip240571@wp.pl">agip240571@wp.pl</a>
-                        </p>
-                        <p>
-                            <a href="tel: 883 616 515">tel: 883616515</a>
-                        </p>
-                        <p style="margin-top: 0.8rem;">
-                            Możesz też napisać do mnie przez media społecznościowe – chętnie opowiem,
-                            jak wygląda współpraca z LR w praktyce, jakie są możliwości rozwoju oraz
-                            jak dopasować model działania do Twojej sytuacji życiowej.
-                        </p>
-                    </div>
+                <div class="contact-info">
+                    <p><strong>Bezpośredni kontakt:</strong></p>
+                    <p class="contact">
+                        <a href="mailto:agip240571@wp.pl">agip240571@wp.pl</a>
+                    </p>
+                    <p class="contact">
+                        <a href="tel: 883 616 515">tel: 883616515</a>
+                    </p>
+                    <p style="margin-top: 0.8rem;">
+                        Możesz też napisać do mnie przez media społecznościowe 
+                        <a href="https://www.facebook.com/"><span class="contact">facebook</span></a> – chętnie opowiem,
+                        jak wygląda współpraca z LR w praktyce, jakie są możliwości rozwoju oraz
+                        jak dopasować model działania do Twojej sytuacji życiowej.
+                    </p>
                 </div>
+            </div>
             </div>
         </section>
     </main>

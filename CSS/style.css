@@ -30,6 +30,14 @@
             display: block;
         }
 
+        .person {
+            padding: 20px;
+        }
+
+        .imgProfil {
+            border-radius: 50px;
+        }
+
         /* Layout */
 
         header {
@@ -391,6 +399,7 @@
         }
 
         form {
+            
             background: #fff;
             border-radius: 1rem;
             padding: 1.5rem;
@@ -436,6 +445,11 @@
             font-size: 0.8rem;
             color: var(--text-light);
             margin-top: 0.4rem;
+        }
+
+        .contact {
+            color: #0a02f8;
+            text-decoration:underline;
         }
 
         .contact-info {
