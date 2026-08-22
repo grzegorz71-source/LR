@@ -453,7 +453,7 @@ textarea:focus {
 
 .contact {
   color: #0a02f8;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .contact-info {
