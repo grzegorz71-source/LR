@@ -30,6 +30,15 @@ a {
   text-decoration: none;
 }
 
+.akapit {
+  text-indent: 25px;
+}
+
+.akapit_name {
+  font-weight: bold;
+  font-size: large;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -147,8 +156,8 @@ header {
 }
 
 .hero-subtitle {
-  font-size: 1.05rem;
-  color: var(--text-light);
+  font-size: 2.05rem;
+  color: var(--primary-dark);
   margin-bottom: 1.5rem;
 }
 
